@@ -1,0 +1,81 @@
+name: breatheai_app
+description: "BreatheAI Lung Health Scanner App"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # ===============================
+  # AI MODEL (TensorFlow Lite)
+  # ===============================
+  tflite_flutter: ^0.12.1
+
+  # ===============================
+  # AUDIO RECORDING
+  # ===============================
+  record: ^6.0.0
+
+  # ===============================
+  # AUDIO PROCESSING
+  # ===============================
+  wav: ^1.2.0
+  fft: ^0.5.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  share_plus: ^7.2.1
+  open_file: ^3.3.2
+  just_audio: ^0.9.36
+  audio_waveforms: ^1.0.5
+ 
+
+  # ===============================
+  # FILE STORAGE
+  # ===============================
+  path_provider: ^2.1.2
+  path: ^1.9.0
+
+  # ===============================
+  # PERMISSIONS
+  # ===============================
+  permission_handler: ^12.0.1
+
+  # ===============================
+  # PDF REPORT GENERATION
+  # ===============================
+  pdf: ^3.10.8
+  printing: ^5.12.0
+
+  # ===============================
+  # LOCAL DATABASE (SCAN HISTORY)
+  # ===============================
+  sqflite: ^2.3.3
+
+  # ===============================
+  # DATA VISUALIZATION
+  # ===============================
+  fl_chart: ^0.66.0
+
+  # ===============================
+  # UTILITY
+  # ===============================
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/model/breatheai_model.tflite
